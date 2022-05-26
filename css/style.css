@@ -1022,6 +1022,13 @@ body {
 
 .filter {
   font-family: 'Montserrat';
+  position: relative;
+}
+
+.filter:hover .filterlist {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
 }
 
 .filter a {
@@ -1032,29 +1039,27 @@ body {
   color: black;
 }
 
-.filter a:hover .filterlist {
-  opacity: 1;
-}
-
-.filterlist {
+.filter .filterlist {
   top: 34px;
   right: 1px;
   width: 430px;
   height: 250px;
   background-color: white;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   opacity: 0;
+  visibility: hidden;
 }
 
-.filterlist ul li {
+.filter .filterlist ul li {
   list-style: none;
   margin-top: 10px;
   color: gray;
 }
 
-.filterlist ul li:hover {
+.filter .filterlist ul li:hover {
   color: black;
+  cursor: pointer;
 }
 
 .productimages {
@@ -1083,9 +1088,18 @@ body {
           transform: scale(1.03);
 }
 
+.videosection {
+  background-color: #f7f7f7;
+}
+
+.valentinesection {
+  margin: 130px 0px;
+}
+
 .video {
   width: 650px;
   height: 420px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -1094,16 +1108,90 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.video img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  cursor: pointer;
 }
 
 .video .playicon {
   top: 180px;
   left: 250px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   position: absolute;
 }
 
+.video .playicon:hover {
+  cursor: pointer;
+}
+
 .video .playicon i {
-  color: white;
-  font-size: 130px;
+  left: 43px;
+  top: 39px;
+  position: absolute;
+  color: red;
+  font-size: 20px;
+}
+
+.valentinetext {
+  font-family: "Playfair Display";
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.valentinetext .h2txt {
+  width: 390px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.valentinetext .h2txt h2 {
+  font-weight: lighter;
+  font-size: 37px;
+}
+
+.valentinetext .ptxt {
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.valentinetext .ptxt p {
+  letter-spacing: 1px;
+  color: #666666;
+  font-size: 17px;
+}
+
+.valentinetext img {
+  margin-right: 10px;
+}
+
+.valentinetext .txtdiv {
+  color: #666666;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.flowerexperts {
+  font-family: "Playfair Display";
+  text-align: center;
+}
+
+.flowerexperts h2 {
+  font-weight: lighter;
+  font-size: 37px;
+}
+
+.flowerexperts p {
+  letter-spacing: 1px;
+  color: #666666;
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */

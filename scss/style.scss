@@ -948,44 +948,54 @@ body{
 
 .filter{
   font-family: 'Montserrat'; 
+  position: relative;
  
+  &:hover{
+    .filterlist{
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+    }
+
+}
   a{
 
-    &:hover{
-
-      .filterlist{
-        opacity: 1;
-        
-      }
-    }
     position: relative;
     text-decoration: none;
         margin-right: 35px;
         font-size: small;
         color: black;
   }
-}
 
-.filterlist{
-  top: 34px;
-  right: 1px;
-  width: 430px;
-  height: 250px;
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  ul{
-    li{
-      list-style: none;
-      margin-top: 10px;
-      color: gray;
-      &:hover{
-        color: black;
+  .filterlist{
+    top: 34px;
+    right: 1px;
+    width: 430px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    
+    visibility: hidden;
+    ul
+    {
+      li
+      {
+        list-style: none;
+        margin-top: 10px;
+        color: gray;
+        &:hover
+        {
+          color: black;
+          cursor: pointer;
+        }
       }
     }
   }
 }
+
+
 
 .productimages{
 
@@ -1015,15 +1025,34 @@ body{
   
 }
 
+
+
+.videosection{
+  background-color: rgb(247, 247, 247);
+}
+
+.valentinesection{
+  margin: 130px 0px;
+}
+
 .video{
   width: 650px;
   height: 420px;
-
+  overflow: hidden;
+  
   position: relative;
+
    img{
     overflow: hidden;
      width: 100%;
      object-fit: cover;
+     transition: 0.3s;
+
+     &:hover{
+      width: 100%;
+       transform: scale(1.03);
+       cursor: pointer;
+     }
      
    }
 
@@ -1031,16 +1060,85 @@ body{
     
     top: 180px;
     left: 250px;
-    
+    background-color: white;
+    width: 100px;
 
+    height: 100px;
+    border-radius: 50%;
+    
     position: absolute;
+    &:hover{
+      cursor: pointer;
+    }
+
     i{
-      color: white;
-     font-size: 130px;
+      left: 43px;
+      top: 39px;
+       position: absolute;
+      color: rgb(255, 0, 0);
+     font-size: 20px;
 
     }
      
    }
 }
 
+.valentinetext{
+  font-family: "Playfair Display";
+  margin-left: 80px;
+  margin-top: 50px;
+
+  .h2txt{
+    width: 390px;
+    height: 100px;
+    margin-bottom: 20px;
+  h2{
+font-weight: lighter;
+font-size: 37px;
+    
+  }
+
+  }
+  
+  .ptxt{
+    width: 600px;
+    margin-bottom: 30px;
+    p{
+      letter-spacing: 1px;
+      color: rgb(102, 102, 102);
+      font-size: 17px;
+    }
+  }
+
+  img{
+    margin-right: 10px;
+  }
+  .txtdiv{
+    color: rgb(102, 102, 102);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.flowerexperts{
+  font-family: "Playfair Display";
+text-align: center;
+  
+
+  h2{
+    font-weight: lighter;
+    font-size: 37px;
+    
+        
+    }
+
+    p{
+      letter-spacing: 1px;
+      color: rgb(102, 102, 102);
+      font-size: 17px;
+      
+    }
+}
 
