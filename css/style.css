@@ -1206,8 +1206,9 @@ body {
 
 .authorimg {
   font-family: 'Montserrat';
-  margin-top: 40px;
+  margin-top: -50px;
   text-align: center;
+  margin-bottom: 140px;
 }
 
 .authorimg h6 {
@@ -1218,5 +1219,74 @@ body {
 .authorimg p {
   font-size: 12px;
   color: #aaaaaa;
+}
+
+.inputsection {
+  background-image: url("https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+  text-align: center;
+}
+
+.inputsection .txtandinput {
+  padding: 200px 0px;
+}
+
+.inputsection h2 {
+  color: white;
+  font-family: "Playfair Display";
+  font-weight: lighter;
+}
+
+.inputsection .inputdiv {
+  display: inline-block;
+}
+
+.inputsection .inputdiv input {
+  padding: 17px 0px 17px 20px;
+  font-family: 'Montserrat';
+  font-size: small;
+  width: 500px;
+  border-color: transparent;
+  margin-top: 30px;
+}
+
+.inputsection button {
+  border: none;
+  background-color: #f34f3f;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 21px 50px 19px 50px;
+  margin-left: -6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inputsection button:hover {
+  background-color: #ff3f2e;
+}
+
+.ourblog {
+  text-align: center;
+  font-family: "Playfair Display";
+}
+
+.ourblog h1 {
+  font-weight: lighter;
+}
+
+.ourblog p {
+  color: #727272;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.blogsec {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */

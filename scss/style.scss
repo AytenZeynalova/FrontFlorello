@@ -1152,8 +1152,9 @@ text-align: center;
 
 .authorimg{
   font-family: 'Montserrat';
-  margin-top: 40px;
+  margin-top: -50px;
   text-align: center;
+  margin-bottom: 140px;
   
   h6{
     margin-top: 20px;
@@ -1164,3 +1165,81 @@ text-align: center;
     color: rgb(170, 170, 170);
   }
 }
+
+.inputsection{
+  background-image: url("https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg");
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+  
+  text-align: center;
+ 
+   
+.txtandinput{
+  padding: 200px 0px;
+}
+   h2{
+
+     color: white;
+     font-family: "Playfair Display"; 
+     font-weight:lighter;
+   }
+
+   
+ 
+  .inputdiv{
+       display: inline-block;
+
+       
+       
+       input{
+         padding: 17px 0px 17px 20px;
+         font-family: 'Montserrat'; 
+         font-size: small;
+         width: 500px;
+         border-color: transparent;
+         margin-top: 30px;
+       }
+     }
+ 
+     button{
+      border: none;
+      background-color: #f34f3f;
+      color: white;
+      font-family: 'Montserrat';
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      padding: 21px 50px 19px 50px;
+      margin-left: -6px;
+      transition: 0.3s;
+
+      &:hover{
+        background-color: #ff3f2e;
+      }
+      
+     }
+}
+
+.ourblog{
+  text-align: center;
+  font-family: "Playfair Display"; 
+
+  h1{
+    font-weight: lighter;
+  }
+
+  p{
+    color: rgb(114, 114, 114);
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+}
+
+.blogsec{
+  margin-top: 100px;
+}
+
+
